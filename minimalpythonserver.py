@@ -6,6 +6,6 @@ app = Flask(__name__.split('.')[0])
 
 @app.route("/")
 def main():
-    with open("/var/www/shaunharker/minimalpythonserver/index.html") as infile:
+    with open("/var/www/html/minimalpythonserver/index.html") as infile:
         data = infile.read()
         return data
