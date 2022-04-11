@@ -1,11 +1,12 @@
 #!/usr/bin/python
 
-from flask import Flask
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__.split('.')[0])
 
 @app.route("/")
 def main():
-    with open("/var/www/html/minimalflaskexample/index.html") as infile:
-        data = infile.read()
-        return data
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run()

@@ -40,3 +40,4 @@ sudo systemctl restart apache2
 * <https://flask.palletsprojects.com/en/2.1.x/quickstart/>
 * <https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04>
 * <https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04#step-5-%E2%80%94-setting-up-virtual-hosts-(recommended)>
+* <https://stackoverflow.com/questions/28207761/where-does-flask-look-for-image-files>
