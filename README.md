@@ -15,7 +15,7 @@ sudo pip install flask # some recommend virtualenv
 # Download this repository
 cd /var/www/html
 sudo git clone https://github.com/shaunharker/minimalflaskexample
-cd minimalpythonserver
+cd minimalflaskexample
 
 # Fix the permissions so group is www-data with same
 # privileges as user
