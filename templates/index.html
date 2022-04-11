@@ -38,24 +38,26 @@
   a {
     color: #2288DD;
   }
-  </style>
+</style>
 </head>
 <body>
   <div class="wrapper">
     <div class="text">
-    <h1> Minimal Flask Example</h1>
-    <p>This webpage is a working instance of the <a href="https://github.com/shaunharker/minimalflaskexample"> <code>github.com/shaunharker/minimalflaskexample</code></a> repository.</p>
+      <h1> Minimal Flask Example</h1>
+      <p>This webpage is a working instance of the <a href="https://github.com/shaunharker/minimalflaskexample"> <code>github.com/shaunharker/minimalflaskexample</code></a> repository. Here is a link to the official documentation:</p>
     </div>
     <div class="logo">
-      <img src="{{url_for('static', filename='flask-logo.png')}}" />
+      <a href="https://flask.palletsprojects.com/en/2.1.x/quickstart/">
+        <img src="{{url_for('static', filename='flask-logo.png')}}" />
+      </a>
     </div>
     <div class="text">
-    <h3>Contact</h3>
-    <p>
-      Shaun Harker<br>
-      <a href="http://shaunharker.com">shaunharker.com</a><br>
-      <a href="mailto:sharker81@gmail.com">sharker81@gmail.com</a>
-    </p>
+      <h3>Contact</h3>
+      <p>
+        Shaun Harker<br>
+        <a href="http://shaunharker.com">shaunharker.com</a><br>
+        <a href="mailto:sharker81@gmail.com">sharker81@gmail.com</a><br>
+      </p>
     <div>
   </div>
 </body>
