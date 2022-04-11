@@ -2,9 +2,7 @@
 
 ## Installation
 
-### Prerequisites
-
-Here are roughly the instructions that worked for me on Ubuntu 20.04:
+Here are roughly the instructions that worked for me on Ubuntu 20.04 on 2022-04-10 (though I'm hand-waving a bit on prerequisites, I think I got it right though):
 
 ```bash
 # Install prerequisites
@@ -29,12 +27,9 @@ sudo a2enmod ssl
 sudo certbot --apache # and handle matters according to https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04
 sudo a2enmod wsgi
 sudo cp site.conf /etc/apache2/sites-available/site.conf
-sudo emacs /etc/apache2/sites-available/site.conf # fix domain name by hand
+sudo emacs /etc/apache2/sites-available/site.conf # fix domain name with search and replace, adjust server alias, RTFM if confused
 sudo a2dissite 000-default
 sudo a2ensite site
-sudo systemctl restart apache2
-
-# Restart apache2 web server
 sudo systemctl restart apache2
 ```
 
