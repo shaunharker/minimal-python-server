@@ -19,7 +19,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
+  div.logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
   img {
     width: 100px;
   }
@@ -33,12 +37,12 @@
     <h1> Minimal Flask Example</h1>
     This webpage is a working instance of the <a href="https://github.com/shaunharker/minimalflaskexample"> <code>github.com/shaunharker/minimalflaskexample</code></a> repository.
     <br><br>
-    <img src="{{url_for('static', filename='flask-logo.png')}}" />
-    <br><br>
+    <div class="logo">
+      <img src="{{url_for('static', filename='flask-logo.png')}}" />
+    </div>    <br><br>
     <h3>Contact</h3>
     <p>
       Shaun Harker<br>
-      Independent Researcher<br>
       <a href="http://shaunharker.com">shaunharker.com</a><br>
       <a href="mailto:sharker81@gmail.com">sharker81@gmail.com</a>
     </p>
